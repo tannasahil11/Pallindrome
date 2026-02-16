@@ -32,3 +32,7 @@ def test_is_palindrome_with_abc():
 #Step 6
 def test_is_palindrome_with_laval():
     assert is_plalindrome("laval") == True
+
+#Step 7
+def test_is_palindrome_with_toronto():
+    assert is_plalindrome("toronto") == False
