@@ -28,3 +28,7 @@ def test_is_palindrome_with_bb():
 #Step 5
 def test_is_palindrome_with_abc():
     assert is_plalindrome("abc") == False
+
+#Step 6
+def test_is_palindrome_with_laval():
+    assert is_plalindrome("laval") == True
