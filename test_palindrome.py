@@ -36,3 +36,7 @@ def test_is_palindrome_with_laval():
 #Step 7
 def test_is_palindrome_with_toronto():
     assert is_plalindrome("toronto") == False
+
+#Step 8 
+def test_is_plalindrome_with_sentence():
+    assert is_plalindrome("Able was I ere I saw Elba") == True
