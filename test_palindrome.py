@@ -13,3 +13,8 @@ def test_is_plaindrome_with_int():
 def test_is_plaindrome_with_float():
     with pytest.raises(ValueError):
         is_plalindrome(13.31)
+
+#Step 2
+
+def test_is_palindrome_with_empty_string():
+    assert is_plalindrome("") == False
