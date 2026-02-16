@@ -18,3 +18,8 @@ def test_is_plaindrome_with_float():
 
 def test_is_palindrome_with_empty_string():
     assert is_plalindrome("") == False
+
+#Step 3
+
+def test_is_palindrome_with_one_character():
+    assert is_plalindrome("a") == True
