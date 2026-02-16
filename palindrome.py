@@ -1,16 +1,14 @@
 """
 Validates strings as palindromes.
 """
+from collections import deque
 def is_plalindrome(word):
     if type(word) != str:
         raise ValueError("Input not a string")
     if len(word) == 0:
         return False
-    a = 0
-    b = len(word) - 1
-    while(a<b):
-        if word[a].casefold() != word[b].casefold():
+    dq = deque(word)
+    while( len(dq) > 1):
+        if( dq.pop().casefold() != dq.popleft().casefold()):
             return False
-        a += 1
-        b -= 1
     return True
