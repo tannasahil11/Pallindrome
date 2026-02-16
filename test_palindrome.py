@@ -24,3 +24,7 @@ def test_is_palindrome_with_one_character():
 #Step 4
 def test_is_palindrome_with_bb():
     assert is_plalindrome("bb") == True
+
+#Step 5
+def test_is_palindrome_with_abc():
+    assert is_plalindrome("abc") == False
